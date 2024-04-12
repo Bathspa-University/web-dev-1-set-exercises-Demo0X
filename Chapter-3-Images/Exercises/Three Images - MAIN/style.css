@@ -1,84 +1,91 @@
+/* Universal selector */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-family: "DM Sans", sans-serif;
-    color: white;
+/* The entire body element style */
+body {
+  font-family: "DM Sans", sans-serif;
+  color: white;
 }
-img{
-    display: block;
-    max-width: 100%;
+/* every img is styled  */
+img {
+  display: block;
+  max-width: 100%;
 }
-main{
-    display: flex;
-    justify-content: center;
-    background-color: #767ab081;
+/* The main container */
+main {
+  display: flex;
+  justify-content: center;
+  background-color: #767ab081;
 }
-h2, h3 {
-    text-align: center;
-    margin: 1rem 0;
-    font-weight: 600;
-}
-
-h2{
-    font-size: 2rem;
-}
-
-hr{
-    margin: 3rem 0;
-    border: 1px solid white;
+/* The styles applied both to h2 and h3 */
+h2,
+h3 {
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 600;
 }
 
-.maincontainer{
-    width: 100vh;
-    max-width: 100%;
-    border: 1px solid black;
-    margin: 2rem 0;
-    padding: 2rem;
-    border-radius: 10rem;
-    background-color: #29292c;
-    box-shadow: 0 0.1rem 5rem 0.3rem rgba(12, 12, 12, 0.815);
-
-}
-.maincontainer h1{
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 900;
+/* H2 seperate style */
+h2 {
+  font-size: 2rem;
 }
 
-.imagecontainer{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
+/* The hr line (page breaker) */
+hr {
+  margin: 3rem 0;
+  border: 1px solid white;
 }
 
-.imagecontainer img{
-    width: 30%;
-    margin-top: 2rem;
+/* The container that holds all the info */
+.maincontainer {
+  width: 100vh;
+  max-width: 100%;
+  border: 1px solid black;
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 10rem;
+  background-color: #29292c;
+  box-shadow: 0 0.1rem 5rem 0.3rem rgba(12, 12, 12, 0.815);
+}
+.maincontainer h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
-
-.imgbox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+/* The image container with all the imgs */
+.imagecontainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
 }
 
-
-.img1{
-    filter: grayscale(100%);
-    border-radius: 2rem;
+.imagecontainer img {
+  width: 30%;
+  margin-top: 2rem;
 }
 
-.img2{
-    filter: saturate(7);
-    border-radius: 2rem;
+.imgbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.img3{
-    filter: sepia(100%);
-    border-radius: 2rem;
+/* Each image's appearance is changed here */
+.img1 {
+  filter: grayscale(100%);
+  border-radius: 2rem;
+}
+
+.img2 {
+  filter: saturate(7);
+  border-radius: 2rem;
+}
+
+.img3 {
+  filter: sepia(100%);
+  border-radius: 2rem;
 }

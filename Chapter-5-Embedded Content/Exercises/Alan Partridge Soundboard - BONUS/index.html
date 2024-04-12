@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio sampler</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Audio section -->
+    <audio src="ah-ha.mp3" id="audio1"></audio>
+    <audio src="back-of-the-net.mp3" id="audio2"></audio>
+    <audio src="bangoutoforder.mp3" id="audio3"></audio>
+    <audio src="dan.mp3" id="audio4"></audio>
+    <audio src="emailoftheevening.mp3" id="audio5"></audio>
+    <audio src="hellopartridge.mp3" id="audio6"></audio>
+    <audio src="iateascotchegg.mp3" id="audio7"></audio>
+    <audio src="imconfused.mp3" id="audio8"></audio>
+    <!-- Main for the other container -->
+    <div class="main">
+      <h1>~~ Audio Sampler ~~</h1>
+      <!-- Main container holding all the information -->
+      <div class="container">
+        <!-- Each sound has the same class and a button with a function that is later tweaked in js -->
+        <div class="sound">
+          <button onclick="playAudio1()" type="button">
+            10. <br />
+            <span> Ah-ha </span> <br />
+            1.4
+          </button>
+        </div>
+        <div class="sound">
+          <button onclick="playAudio2()" type="button">
+            11. <br />
+            <span>Back-Of-The-Net </span>
+            <br />
+            1.02
+          </button>
+        </div>
+        <div class="sound">
+          <button onclick="playAudio3()" type="button">
+            12. <br />
+            <span> Bang Out of Order</span><br />
+            1.38
+          </button>
+        </div>
+        <div class="sound">
+          <button onclick="playAudio4()" type="button">
+            13. <br />
+            <span> Dan</span> <br />
+            0.5
+          </button>
+        </div>
+        <div class="sound">
+          <button onclick="playAudio5()" type="button">
+            14. <br />
+            <span> Email Of The Evening</span> <br />
+            1.07
+          </button>
+        </div>
+        <div class="sound">
+          <button onclick="playAudio6()" type="button">
+            15. <br />
+            <span> Hello Partridge</span> <br />
+            2.25
+          </button>
+        </div>
+        <div class="sound">
+          <button onclick="playAudio7()" type="button">
+            16. <br />
+            <span> I Ate A Scotch Egg</span> <br />
+            1.91
+          </button>
+        </div>
+        <div class="sound">
+          <button onclick="playAudio8()" type="button">
+            17. <br />
+            <span> I Am Confused</span> <br />
+            1.49
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Linking the js file -->
+    <script src="index.js"></script>
+  </body>
+</html>

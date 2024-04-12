@@ -1,0 +1,61 @@
+/* Universal selector */
+* {
+  padding: 0;
+  margin: 0;
+}
+/* Body with a gif url */
+body {
+  background-image: url(https://miro.medium.com/v2/resize:fit:3840/1*Tkf2JP_u7Ga-DIM_S_9Zcw.gif);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  width: 100%;
+  margin-top: 10px;
+}
+/* Container given the grid display */
+.container {
+  display: grid;
+  grid-template-columns: 650px 650px 650px;
+  grid-template-rows: 250px 250px 250px;
+}
+
+.main h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 10px;
+  font-weight: 900;
+}
+/* All buttons are styled here */
+button {
+  padding: 40px;
+  width: 500px;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  border-radius: 30px;
+  border: 9px solid rgba(100, 103, 110, 0.966);
+  transition: all 0.5s;
+}
+/* Button hover effects */
+button:hover {
+  background-color: rgba(235, 235, 235, 0.603);
+  color: white;
+  border: 15px double rgb(68, 67, 67);
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+span {
+  font-weight: 900;
+}
+
+/* Each sound box is styled here */
+.sound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px;
+  width: 500px;
+}

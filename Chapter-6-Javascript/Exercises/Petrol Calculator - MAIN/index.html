@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Image of a gascan behind the page -->
+    <img src="gascan2.jpg" alt="gascan" />
+    <!-- Main container for the information -->
+    <div class="container">
+      <h1>Petrol Calcultor</h1>
+      <!-- Calculator box -->
+      <div class="calculator">
+        <!-- First input and its label -->
+        <label for="num1">Cost of Petrol Per Litre:</label>
+        <span> <input type="text" id="num1" /> (1.72) </span><br /><br /><br />
+        <!-- Second input and its label -->
+        <label for="num2">Number of Litres Purchased:</label>
+        <span> <input type="text" id="num2" /> </span>
+      </div>
+      <!-- button to calculate final cost -->
+      <button onclick="calculate()">Total</button>
+      <!-- p tag that changes and shows the number -->
+      <p id="total">Total here</p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

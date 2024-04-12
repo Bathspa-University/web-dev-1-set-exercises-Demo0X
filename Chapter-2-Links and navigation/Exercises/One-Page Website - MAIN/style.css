@@ -1,0 +1,579 @@
+/* Universal selector where I set padding and margin to 0 so I can style it seperately later */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Html selector to set smooth scroll and any overflows horizontally to hidden */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* The body section styling where font and bg colour is specified */
+body {
+  box-sizing: border-box;
+  font-family: "Clash Grotesk", sans-serif;
+  background-color: #090b10;
+}
+
+/* The plot container for all the information in the page with a given height */
+.container {
+  min-height: 100vh;
+}
+
+/* The top container for the header section information */
+.top {
+  height: 90vh;
+  background-image: url(https://windowscustomization.com/wp-content/uploads/2019/06/Destiny-2-Shadowkeep.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -100px;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/*  header section styling */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.603);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.244),
+    0px 10px 30px rgba(0, 0, 0, 0.221);
+  border-radius: 5px;
+}
+
+.header h1 {
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50rem;
+}
+
+.header ul li {
+  padding: 15px 20px;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 1s;
+}
+/* Adding underline on hover for the nav bar */
+.header ul li a:hover {
+  color: rgba(187, 191, 187, 0.725);
+}
+
+.header ul li::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: 0px;
+  transition: 0.8s;
+}
+
+.header ul li:hover::after {
+  width: 100%;
+}
+
+/* header button styling */
+.header > .websitebtn {
+  text-decoration: none;
+  font-size: 1.3rem;
+  border: 1px solid white;
+  justify-self: flex-end;
+  padding: 8px;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  box-shadow: 0px 5px 20px white, 0px 0px 6px white;
+  transition: all 0.5s;
+}
+
+/* button on hover styling */
+.websitebtn:hover {
+  background-color: white;
+  color: black;
+  transform: translateY(-3px);
+  box-shadow: 0px 0px 20px white;
+  outline: 10px double white;
+}
+
+/* plot title of page styling */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+  left: -20px;
+  font-size: 10rem;
+  letter-spacing: 40px;
+  font-weight: 400;
+  color: white;
+  text-shadow: 10px 10px 50px black, 10px 10px 50px gray, 5px 5px 20px black,
+    2px 2px 20px gray;
+  text-transform: uppercase;
+  animation: effect 4s ease-in-out;
+  opacity: 1;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* Animation for the title */
+@keyframes effect {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+    letter-spacing: 20px;
+  }
+  70% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff;
+    transform: translateY(-5px);
+  }
+  90% {
+    opacity: 0.8;
+    text-shadow: 0px 0px 30px #fff, 0px 0px 30px #fff;
+    letter-spacing: 40px;
+  }
+  100% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 0px #fff, 0px 0px 0px #fff;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* This is the seperator styling area */
+
+.seperator {
+  width: 0;
+  height: 0;
+  border-right: 100vw solid transparent;
+  border-bottom: 5.9vw solid #0d0f16f7;
+  margin-top: -4.9vw;
+}
+.seperator2 {
+  width: 0;
+  height: 0;
+  border-left: 100vw solid transparent;
+  border-bottom: 10.9vw solid #0d0f16fd;
+  margin-top: -10.9vw;
+}
+.seperator3 {
+  width: 0;
+  height: 0;
+  border-left: 100vw solid transparent;
+  border-top: 5.9vw solid #ababadfa;
+  margin-top: -1.9vw;
+}
+.seperator4 {
+  width: 0;
+  height: 0;
+  border-right: 60vw solid transparent;
+  border-top: 6.9vw solid rgb(238, 238, 240);
+  margin-top: -5.9vw;
+}
+
+.seperator5 {
+  width: 0;
+  height: 0;
+  border-right: 100vw solid transparent;
+  border-bottom: 5.9vw solid #ababad;
+  margin-top: -4.9vw;
+  position: relative;
+  top: -70px;
+}
+
+.seperator6 {
+  width: 0;
+  height: 0;
+  border-left: 100vw solid transparent;
+  border-bottom: 6.9vw solid rgb(238, 238, 240);
+  margin-top: -6.9vw;
+  position: relative;
+  top: -70px;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* Main section for the plot styling */
+.plot {
+  margin: 120px 40px;
+  letter-spacing: 1px;
+  width: 60%;
+  color: white;
+}
+
+.plot::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 800px;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #090b10, transparent);
+  z-index: 1000;
+}
+
+.plot h1 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.plot p {
+  line-height: 40px;
+  font-size: 1.2rem;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Key information (key features) section styling */
+.keyinfo {
+  border: 1px solid white;
+  background-color: #e8e8e8f7;
+  height: 80vh;
+  z-index: -1;
+  position: relative;
+  top: -100px;
+  margin-bottom: 0;
+}
+
+.keyinfo h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  font-size: 3rem;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.54);
+}
+/* each box inside keyinfo */
+.keyinfo > .box1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 10px;
+}
+/* each box's p element inside keyinfo */
+.keyinfo > .box1 p {
+  width: 20%;
+  font-size: 1.2rem;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: #f1721b;
+  padding: 10px;
+  color: white;
+  box-shadow: 0px 5px 20px black;
+}
+/* each boxes h2 element inside keyinfo */
+.keyinfo > .box1 h2 {
+  font-size: 2rem;
+  display: flex;
+  border: 3px solid white;
+  background-color: #f1721b;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.895);
+  box-shadow: 0px 5px 20px black;
+}
+
+.keyinfo span {
+  font-weight: 900;
+}
+/* Rest all the boxes and their each h2 & p elements */
+.keyinfo > .box2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin: 40px 20px;
+}
+
+.keyinfo > .box2 p {
+  width: 20%;
+  font-size: 1.2rem;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: #6e53a1;
+  padding: 10px;
+  color: white;
+  box-shadow: 0px 5px 20px black;
+}
+
+.keyinfo > .box2 h2 {
+  font-size: 2rem;
+  display: flex;
+  width: 20%;
+  border: 3px solid white;
+  background-color: #6e53a1;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.895);
+  box-shadow: 0px 5px 20px black;
+}
+
+.keyinfo > .box3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 10px;
+}
+
+.keyinfo > .box3 p {
+  width: 20%;
+  font-size: 1.2rem;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: #48799b;
+  padding: 10px;
+  color: white;
+  box-shadow: 0px 5px 20px black;
+}
+
+.keyinfo > .box3 h2 {
+  font-size: 2rem;
+  width: 14%;
+  display: flex;
+  border: 3px solid white;
+  background-color: #48799b;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.895);
+  box-shadow: 0px 5px 20px black;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* The cast box styling starts from here */
+.cast {
+  height: 15vh;
+  color: rgba(255, 255, 255, 0.999);
+  padding: 20px 30px;
+  box-shadow: 0px 20px 50px #121621;
+  position: relative;
+  top: -70px;
+  background-color: #121621;
+}
+/* cast box and their headings and cast team */
+.cast h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline dotted;
+}
+
+.cast ul {
+  display: flex;
+  height: 10vh;
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.2rem;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* This is the character styling area  */
+.char {
+  height: 80vh;
+  color: white;
+}
+/* All the headings present inside charbox */
+.char h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.char h3 {
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 100px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.743);
+  font-size: 1.1rem;
+}
+.char h2 {
+  text-align: center;
+  padding: 50px 0px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: pointer;
+  text-shadow: 0px 5px 30px black;
+}
+
+/* The desc of each character */
+.char p {
+  opacity: 0;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.178);
+  padding: 40px;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 1s;
+  box-shadow: 0px 5px 30px black;
+  scale: 0;
+}
+/* The individual charboxes present inside the section char */
+.char > .charbox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+/* +====================================================================================================================================*/
+/* When hovering over the char you will see their desc this selects all the classes that have "sub" and "desc" in their name */
+[class^="sub"]:hover + [class^="desc"] {
+  opacity: 1;
+  scale: 1;
+}
+[class^="sub"] {
+  transition: all 1s;
+  animation: pulse 1s ease-in-out infinite;
+}
+/* Animation of the character names that give a pulse */
+@keyframes pulse {
+  from {
+    text-shadow: 0px 0px 2px white;
+  }
+}
+
+/* +====================================================================================================================================*/
+/* When hovering over each character you will see their individual animations and styles */
+.sub1:hover {
+  color: #c39324;
+  scale: 2;
+  letter-spacing: 8px;
+  animation: pulse1 1s ease-in-out infinite;
+}
+@keyframes pulse1 {
+  from {
+    text-shadow: 0px 0px 3px #c39324;
+  }
+}
+
+.sub2:hover {
+  color: #027ca1;
+  scale: 2;
+  letter-spacing: 8px;
+  animation: pulse2 1s ease-in-out infinite;
+}
+@keyframes pulse2 {
+  from {
+    text-shadow: 0px 0px 3px #027ca1;
+  }
+}
+
+.sub3:hover {
+  color: #ab3033;
+  scale: 2;
+  letter-spacing: 8px;
+  animation: pulse3 1s ease-in-out infinite;
+}
+@keyframes pulse3 {
+  from {
+    text-shadow: 0px 0px 3px #ab3033;
+  }
+}
+
+/* +====================================================================================================================================*/
+/* Width of each char box and borders for their desc */
+.charbox > .char1 {
+  width: 20%;
+}
+.charbox > .char2 {
+  width: 20%;
+}
+.charbox > .char3 {
+  width: 20%;
+}
+
+.char1 p {
+  border-top: 5px solid #c39324;
+}
+.char2 p {
+  border-top: 5px solid #027ca1;
+}
+.char3 p {
+  border-top: 5px solid #ab3033;
+}
+/* +====================================================================================================================================*/
+/* The entire review box of the page */
+.reviews {
+  border: 1px solid white;
+  background-color: #e8e8e8f7;
+  height: 50vh;
+  z-index: -1;
+  position: relative;
+  top: -100px;
+  margin-bottom: 0;
+}
+/* The review headings */
+.reviews h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  font-size: 3rem;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.54);
+}
+/* each review box which has a relative position property */
+.review-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* All the reviews are on top each other with an animation that shows them one after the other */
+.review {
+  position: absolute;
+  opacity: 0;
+  animation: fadein 36s infinite;
+  font-size: 2.5rem;
+  margin-top: 200px;
+  text-align: center;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.54);
+}
+/* The animation with calculations */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  5.55% {
+    opacity: 1;
+    scale: 1;
+  }
+  13.9% {
+    opacity: 1;
+  }
+  19.4% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    scale: 0;
+  }
+}
+/* each review and their delay */
+.review:nth-child(1) {
+  animation-delay: 0s;
+}
+.review:nth-child(2) {
+  animation-delay: 9s;
+}
+.review:nth-child(3) {
+  animation-delay: 18s;
+}
+.review:nth-child(4) {
+  animation-delay: 27s;
+}

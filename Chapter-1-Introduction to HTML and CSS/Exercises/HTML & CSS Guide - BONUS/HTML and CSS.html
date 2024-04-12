@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style2.css">
+<body>
+    <div class="line1">
+        <div class="heading">
+            <h1> HTML & CSS Reference Guide </h1>
+        </div>
+    </div>
+    <div class="nav">
+        <a href="#html" class="btn"> HTML </a>
+        <a href="#css" class="btn"> CSS </a>
+    </div>
+    <div>
+        <h2 id="html" class="heading2"> ---- HTML Tags ----</h2>
+        <h3 class="subhead"> 1.) HTML &ltp&gt Tag </h3>
+        <p class="desc"> &ltp&gt tag: A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+        <br> The HTML &ltp&gt element defines a paragraph. </p>
+        <h3> Example: </h3>
+        <code class="example"> &ltp&gt This is a paragraph. &lt/p&gt </code><br>
+        <code class="example"> &ltp&gt This is another paragraph. &lt/p&gt </code>
+        <br>
+    </div>
+    <div>
+        <h3 class="subhead"> 2.) HTML &lthr&gt Tag </h3>
+        <p class="desc"> &lthr&gt tag: tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+        <br> The &lthr&gt element is used to separate content (or define a change) in an HTML page: </p>
+        <h3> Example: </h3>
+        <code class="example"> &ltp&gt This is some text. &lt/p&gt &lthr&gt </code><br>
+    </div>
+    <div>
+        <h3 class="subhead"> 3.) HTML &ltbr&gt Tag </h3>
+        <p class="desc"> &ltbr&gt tag: The HTML &ltbr&gt element defines a line break.
+        <br> Use &ltbr&gt if you want a line break (a new line) without starting a new paragraph: </p>
+        <h3> Example: </h3>
+        <code class="example"> &ltp&gt This is some text, &ltbr&gt with line breaks. &lt/p&gt </code><br>
+    </div>
+    <div>
+        <h3 class="subhead"> 4.) HTML Headings Tag </h3>
+        <p class="desc"> HTML headings are defined with the &lth1&gt to &lth6&gt tags.
+        <br> &lth1&gt defines the most important heading. &lth6&gt defines the least important heading. </p>
+        <h3> Example: </h3>
+        <code class="example"> 
+            &lth1&gt Heading 1 &lt/h1&gt <br>
+            &lth2&gt Heading 2 &lt/h2&gt <br>
+            &lth3&gt Heading 3 &lt/h3&gt <br>
+            &lth4&gt Heading 4 &lt/h4&gt <br>
+            &lth5&gt Heading 5 &lt/h5&gt <br>
+            &lth6&gt Heading 6 &lt/h6&gt </code><br>
+    </div>
+    <div> 
+        <h3 class="subhead"> 5.) HTML Comment Tag </h3>
+        <p class="desc"> HTML comments are not displayed in the browser, but they can help document your HTML source code.
+        <br> You can add comments to your HTML source by using the following syntax: </p>
+        <h3> Example: </h3>
+        <code class="example" style="color: green;"> &lt!-- Write your comments here --&gt </code><br>
+    </div>
+    <div>
+        <h3 class="subhead"> 6.) HTML Images </h3>
+        <p class="desc"> &ltimg&gt tag: HTML images are defined with the &ltimg&gt tag. 
+        <br> The source file (src), alternative text (alt), width, and height are provided as attributes: </p>
+        <h3> Example: </h3>
+        <code class="example"> &ltimg src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"> </code><br>
+    </div>
+    <div>
+        <h3 class="subhead"> 7.) HTML Links </h3>
+        <p class="desc"> &lta&gt tag:HTML links are defined with the &lta&gt tag: 
+        <br> </p>
+        <h3> Example: </h3>
+        <code class="example"> &lta href="<code style="color: blue;">https://www.w3schools.com </code>"> This is a link &lt/a&gt  </code><br>
+    </div>
+    <div>
+        <h3 class="subhead"> 8.) HTML Unordered List </h3>
+        <p class="desc"> &ltul&gt tag: An unordered list starts with the &ltul&gt tag. Each list item starts with the &ltli&gt tag. 
+        <br> The list items will be marked with bullets (small black circles) by default: </p>
+        <h3> Example: </h3>
+        <code class="example"> &ltul&gt <br>
+            &ltli&gt Coffee &lt/li&gt <br>
+            &ltli&gt Tea &lt/li&gt <br>
+            &ltli&gt Milk &lt/li&gt
+            &lt/ul&gt </code><br>
+    </div>
+    <div>
+        <h3 class="subhead"> 9.) HTML Ordered List </h3>
+        <p class="desc"> &ltol&gt tag: An Ordered list starts with the &ltol&gt tag. Each list item starts with the &ltli&gt tag. 
+        <br> The list items will be marked with numbers by default: </p>
+        <h3> Example: </h3>
+        <code class="example"> &ltol&gt <br>
+            &ltli&gt Coffee &lt/li&gt <br>
+            &ltli&gt Tea &lt/li&gt <br>
+            &ltli&gt Milk &lt/li&gt
+            &lt/ol&gt </code><br>
+    </div>
+    <div>
+        <h3 class="subhead"> 10.) HTML Div Element </h3>
+        <p class="desc"> &ltdiv&gt tag: The &ltdiv&gt element is by default a block element, meaning that it takes all available width, and comes with line breaks before and after. 
+        <br> A &ltdiv&gt element takes up all available width: </p>
+        <h3> Example: </h3>
+        <code class="example"> Lorem Ipsum &ltdiv&gt I am a div &lt/div&gt dolor sit amet. </code><br>
+    </div>
+    <hr class="linebreak">
+    <div> 
+        <h2 id="css" class="heading2"> ---- CSS Tags ----</h2>
+        <h3 class="subhead"> 1.) CSS Comments </h3>
+        <p class="desc"> Comments are used to explain the code, and may help when you edit the source code at a later date.
+        <br> A CSS comment is placed inside the &ltstyle&gt element, and starts with /* and ends with */: </p>
+        <h3> Example: </h3>
+        <code class="example"> <code style="color: green;"> /* This is a single-line comment */ </code>. </code><br>
+    </div>
+    <div>
+        <h3 class="subhead"> 2.) CSS Background Color </h3>
+        <p class="desc"> You can set the background color for HTML elements:
+        <br> </p>
+        <h3> Example: </h3>
+        <code class="example"> &lth1 style="<code style="color: blue;">background-color:DodgerBlue;</code>"> Hello World &lt/h1> </code><br>
+    </div>
+    <div>
+        <h3 class="subhead"> 3.) CSS Text Color </h3>
+        <p class="desc"> You can set the color of text:
+        <br> </p>
+        <h3> Example: </h3>
+        <code class="example"> &lth1 style="<code style="color: blue;">color:Tomato;</code>">Hello World &lt/h1> </code><br>
+    </div>
+    <div>
+        <h3 class="subhead"> 4.) CSS Border Color </h3>
+        <p class="desc"> You can set the color of borders:
+        <br> </p>
+        <h3> Example: </h3>
+        <code class="example"> &lth1 style="<code style="color: blue;">border:2px solid Tomato;</code>"> Hello World &lt/h1> </code><br>
+    </div>
+    <div>
+        <h3 class="subhead"> 5.) CSS Padding </h3>
+        <p class="desc"> The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+        <br> With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left). </p>
+        <h3> Example: </h3>
+        <code class="example"> &lth1 style="<code style="color: blue;">padding: 10px; border: 1px solid #4CAF50</code>"> Hello World &lt/h1> </code><br>
+    </div>
+    <div>
+        <h3 class="subhead"> 6.) CSS Margins </h3>
+        <p class="desc"> Margins are used to create space around elements, outside of any defined borders.
+        <br>  </p>
+        <h3> Example: </h3>
+        <code class="example"> &lth1 style="<code style="color: blue;">margin: 70px; border: 1px solid #4CAF50</code>"> Hello World &lt/h1> </code><br>
+    </div>
+    <div>
+        <h3 class="subhead"> 7.) CSS Height & Width </h3>
+        <p class="desc"> The CSS height and width properties are used to set the height and width of an element.
+        <br>  </p>
+        <h3> Example: </h3>
+        <code class="example"> &lth1 style="<code style="color: blue;">height: 50px; width: 100%; border: 1px solid #4CAF50;</code>"> Hello World &lt/h1> </code><br>
+    </div>
+    <div>
+        <h3 class="subhead"> 8.) CSS Font Family Property </h3>
+        <p class="desc"> In CSS, we use the font-family property to specify the font of a text.
+        <br> </p>
+        <h3> Example: </h3>
+        <code class="example"> &lth1 style="<code style="color: blue;">font-family: "Times New Roman", Times, serif;</code>"> Hello World &lt/h1> </code><br>
+    </div>
+    <div class="">
+        <i> Reference: Learn to code (no date) W3Schools Online Web Tutorials. Available at: https://www.w3schools.com/ (Accessed: 13 March 2024). </i>
+    </div>
+
+    
+</body>
+</html>
